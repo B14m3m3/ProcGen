@@ -2,13 +2,19 @@ var canvas = document.getElementById("mycanvas");
 var context = canvas.getContext("2d");
 var height = canvas.height;
 var width = canvas.width;
-var cellsize = 10;
 var cellwidth =  width / cellsize;
-var cellheight = height / cellsize;
-var cells;
-var deathlimit = 3;
-var birthlimit = 4;
-var cellchance = 0.4;
+const cellheight = height / cellsize,
+
+
+const cellsize = 10,
+    deathlimit = 3,
+    birthlimit = 4,
+    cellchance = 0.4;
+
+
+ var cells;
+
+
 window.onload = function(){
     cells = createArray(cellheight,cellwidth);
     randomize();
